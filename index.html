@@ -7,18 +7,18 @@
     <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.3.4/dist/web3.min.js"></script>
     <style>
         body {
-		width: 100%;
-    		height: 100%;
-    		margin: 0;
-    		padding: 0;
-    		background-image: url('https://github.com/dxmolnar/Cruise_NFT/blob/main/background_fullhd_size.png?raw=true');
-    		background-repeat: no-repeat;
-    		background-size: cover;
-    		background-position: center top;	
-        	display: flex; /* These three lines will center the buttons vertically */
-        	flex-direction: column;
-        	justify-content: center;
-            }
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://github.com/dxmolnar/Cruise_NFT/blob/main/background_fullhd_size.png?raw=true');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center top;    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
 
         /* Additional styles to make your buttons more visible against the background */
         button {
@@ -30,16 +30,29 @@
             color: white; /* White text */
             border-radius: 5px;
             align-self: center; /* Centering buttons horizontally */
-		/* Fix the width and height for all buttons */
-    		width: 150px;
-    		height: 50px;
-    		display: flex;      /* These three lines will center the text within the button */
-    		justify-content: center;
-    		align-items: center;
+
+            /* Fix the width and height for all buttons */
+            width: 150px;
+            height: 50px;
+            display: flex;      
+            justify-content: center;
+            align-items: center;
         }
 
         button:hover {
             background-color: #45a049; /* Darker green on hover */
+        }
+
+        /* Media Query for mobile devices */
+        @media screen and (max-width: 768px) {
+            body {
+                background-size: 100% auto; /* Adjusting background size for mobile */
+            }
+
+            button {
+                width: 130px;  /* Smaller button width for mobile */
+                height: 40px;  /* Smaller button height for mobile */
+            }
         }
     </style>
 </head>
